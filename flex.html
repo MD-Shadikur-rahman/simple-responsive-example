@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            border: 3px solid gold;
+            border-radius: 10px;
+            padding-left: 10px;
+            border-bottom: none;
+            margin-right: 10px;
+            border-left: 5px solid goldenrod;
+            height: 100%;
+        }
+
+        .color {
+            color: darkgreen;
+        }
+        .container2{
+            display: flex;
+            margin: 30px 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            width: 490px;
+            height: 100px;
+            background-color: antiquewhite;
+            border: 3px solid gold;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            .box{
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flexible <em> <span class="color">Flex</span> </em> </h2>
+    <div class="container">
+        <div class="box">
+            <h3><em>First box</em></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.</p>
+        </div>
+        <div class="box">
+            <h3><em>Second box</em></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis aliquam est repellendus doloribus rerum ratione aspernatur quas.
+                Reprehenderit, placeat illum? Ad quas velit quam, dignissimos officia provident
+                possimus exercitationem iste! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Labore sint animi perspiciatis veritatis ab molestiae, eligendi expedita
+                provident officiis, sed error voluptas impedit veniam ex. Velit animi ullam
+                laboriosam itaque.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+        <div class="item">item - 11</div>
+        <div class="item">item - 12</div>
+    </div>
+</body>
+
+</html>
