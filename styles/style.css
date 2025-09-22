@@ -1,0 +1,50 @@
+.color {
+    color: rgb(252, 2, 252);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    height: 400px;
+    display: flex;
+    gap: 3px;
+    margin-bottom: 3PX;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.vertical-collage img {
+    height: calc((100% - 3px)/2);
+}
+
+.square-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+    height: 400px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+     .square-collage{
+        grid-template-columns: 1fr;
+     }
+} 
+
+/* media devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+}
