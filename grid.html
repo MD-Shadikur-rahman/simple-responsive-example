@@ -1,44 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        .container{
+        .container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 200px) 50px 50px;
             gap: 20px;
         }
-        .box{
+
+        .box {
             background-color: rgb(68, 66, 66);
+            padding-left: 10px;
         }
-        #box-1{
+
+        #box-1 {
             grid-row: span 5;
         }
-        #box-11, #box-12{
+
+        #box-11,
+        #box-12 {
             grid-column: span 3;
         }
-        #box-6, #box-7, #box-9, #box-10{
+
+        #box-6,
+        #box-7,
+        #box-9,
+        #box-10 {
             background-color: red;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="box" id="box-1">box - 1</div>
-        <div class="box" id="box-2">box - 2</div>
-        <div class="box" id="box-3">box - 3</div>
-        <div class="box" id="box-4">box - 4</div>
-        <div class="box" id="box-5">box - 5</div>
-        <div class="box" id="box-6">box - 6</div>
-        <div class="box" id="box-7">box - 7</div>
-        <div class="box" id="box-8">box - 8</div>
-        <div class="box" id="box-9">box - 9</div>
-        <div class="box" id="box-10">box - 10</div>
-        <div class="box" id="box-11">box - 11</div>
-        <div class="box" id="box-12">box - 12</div>
+        <div class="box" id="box-1">
+            <h2>box - 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                nihil dignissimos. Iusto, debitis illum veniam, qui ipsa, id adipisci alias
+                dolores dolorem facilis doloremque. Aperiam soluta pariatur ipsa voluptatum
+                ab! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, in
+                dolorum rem aliquam enim doloribus doloremque. Modi, beatae laboriosam cupiditate
+                possimus error suscipit cumque dolore earum ratione, ipsam assumenda repellat
+                quod nesciunt corrupti ducimus, ipsum distinctio itaque qui dolorum! Beatae
+                asperiores, porro a molestiae inventore obcaecati reiciendis magni, odio
+                doloribus earum aperiam sit corporis dolor minima enim cumque! Quos dolor
+                ut minus provident voluptas consequuntur consequatur laudantium reprehenderit
+                aliquam dignissimos doloremque libero quod veniam amet placeat quisquam eaque
+                recusandae velit, aspernatur nisi iure! Ducimus perspiciatis earum cupiditate
+                in? Atque possimus ea sapiente cumque mollitia sint nisi modi, pariatur
+                repellendus ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima, veniam est repudiandae doloribus a mollitia laudantium, ipsum sit
+                accusamus iste quam omnis reiciendis eaque, aliquam expedita sint at! Placeat
+                quasi beatae perspiciatis hic numquam dicta ratione ab, voluptatum eaque exerci
+                tationem voluptatibus ex vitae debitis eveniet eum, illum rerum architecto sapie
+                nte molestias labore dignissimos voluptate amet expedita excepturi. Esse odit a
+                nimi doloribus sequi officia libero doloremque, quas distinctio, fugiat debitis
+                aliquid nulla maxime hic labore exercitationem veritatis ipsum aperiam exceptu
+                ri molestias quaerat vel itaque? Culpa vitae earum nobis itaque maxime, conseq
+                uatur a voluptas minima! Non perspiciatis, eius exercitationem reiciendis nobi
+                s qui! Alias aperiam quasi, minima ea magnam, quibusdam earum quam libero quas
+                provident dolor quo nam! Voluptas tempora beatae at, distinctio suscipit tota
+                m consequatur esse molestias obcaecati fugiat nulla nam fugit, dolorum volupt
+                ate aut explicabo? Sequi asperiores, quaerat perferendis voluptatem voluptate
+                s iusto natus, et ullam itaque architecto adipisci earum porro exercitationem
+                . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam
+                aut laboriosam eveniet dignissimos repellendus, animi blanditiis perspiciatis
+                obcaecati neque fugit .</p>
+        </div>
+        <div class="box" id="box-2">
+            <h2>box - 2</h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-3">
+            <h2>box - 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-4">
+            <h2>box - 4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-5">
+            <h2>box - 5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-6">
+            <h2>box - 6</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-7">
+            <h2>box - 7</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-8">
+            <h2>box - 8</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-9">
+            <h2>box - 9</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-10">
+            <h2>box - 10</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+                vitae illum distinctio ducimus mollitia labore at, doloremque reiciendis
+                magni sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quas aliquid quia consequatur sed reprehenderit assumenda eaque, dolo
+                rem in blanditiis, laudantium repellendus maxime corrupti. Veritatis
+                voluptates eaque illum praesentium !</p>
+        </div>
+        <div class="box" id="box-11">
+            <h2>box - 11</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima?</p> -->
+        </div>
+        <div class="box" id="box-12">
+            <h2>box - 12</h2>
+           <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, 
+            molestias.</p> -->
+        </div>
     </div>
 </body>
+
 </html>
